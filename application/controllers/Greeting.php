@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 #[AllowDynamicProperties]
-class Welcome extends CI_Controller {
+class Greeting extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,12 +19,14 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/userguide3/general/urls.html
 	 */
-	public function index()
-	{
-		$this->load->view('welcome_message');
-	}
-	public function showHello()
+	public function sayHello()
 	{
 		$this->load->view('say_hello');
 	}
+
+	public function onePlusTwo($value='')
+	{
+		$this->load->view('one_plus_two');
+	}
+
 }
