@@ -1,0 +1,1 @@
+<h1>About Page, Hello my name is <?php echo $name; ?></h1>

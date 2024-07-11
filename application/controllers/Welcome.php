@@ -23,8 +23,13 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
-	public function showHello()
+
+	public function postsHomepage()
 	{
-		$this->load->view('say_hello');
+		$this->load->view('templates/header');
+		$this->load->view('posts/index');
+		$this->load->view('templates/footer');
 	}
+
+
 }
